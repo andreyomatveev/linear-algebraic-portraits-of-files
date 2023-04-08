@@ -1,4 +1,4 @@
-# Linear Algebraic Portrais of Files #
+# Linear Algebraic Portraits of Files #
 This repo is thought of as a sandbox for experiments with applications 
 of Proposition 5.9 (essentially Proposition 2.4 from the preprint https://arxiv.org/abs/1801.02601)
 from the monograph [A.O. Matveev, Symmetric Cycles](https://www.jennystanford.com/), Singapore: Jenny Stanford Publishing, 2023.
