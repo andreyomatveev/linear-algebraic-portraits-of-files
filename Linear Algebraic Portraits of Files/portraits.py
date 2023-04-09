@@ -46,15 +46,17 @@ def to_deque_indices_of_vectors_in_decomp_sequence_wrt_disting_symm_cycle(bstrin
                 inclusion_maximal_intervals_of_the_negative_part[p-1][0]+size)
     elif bstring[0] and bstring[-1]:  # see Proposition 5.9(ii)
         part_of_indices_minus.append(size)
-        part_of_indices_plus.append(
-            inclusion_maximal_intervals_of_the_negative_part[0][1]+1)
+        if(rho > 1):
+            part_of_indices_plus.append(
+                inclusion_maximal_intervals_of_the_negative_part[0][1]+1)
         for p in range(2, rho):
             part_of_indices_plus.append(
                 inclusion_maximal_intervals_of_the_negative_part[p-1][1]+1)
             part_of_indices_minus.append(
                 inclusion_maximal_intervals_of_the_negative_part[p-1][0]+size)
-        part_of_indices_minus.append(
-            inclusion_maximal_intervals_of_the_negative_part[rho-1][0]+size)
+        if(rho > 1):
+            part_of_indices_minus.append(
+                inclusion_maximal_intervals_of_the_negative_part[rho-1][0]+size)
     elif (not bstring[0]) and (not bstring[-1]):  # see Proposition 5.9(iii)
         part_of_indices_plus.append(0)
         for p in range(1, rho + 1):
